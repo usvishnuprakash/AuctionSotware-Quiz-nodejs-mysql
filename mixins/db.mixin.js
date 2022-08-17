@@ -18,7 +18,4 @@ module.exports = {
   query(sql, args) {
     return util.promisify(connection.query).call(connection, sql, args);
   },
-  close() {
-    return util.promisify(connection.end).call(connection);
-  },
 };

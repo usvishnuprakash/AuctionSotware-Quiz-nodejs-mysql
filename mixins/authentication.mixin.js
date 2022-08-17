@@ -17,7 +17,7 @@ module.exports = {
       }
     } catch (error) {
       return res.json(400).json({
-        message: "GUEST TOKEN IS INVALID",
+        message: "GUEST TOKEN IS INVALID PLEASE VERIFY GUEST TOKEN",
       });
     }
 
