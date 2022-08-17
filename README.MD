@@ -1,38 +1,39 @@
-# Tile
-Auction Softwares interview Quiz
+# Installing guide
 
+## install step
 
-## Installation
-
-Use the package manager [npm](https://www.npmjs.com/) to install all dependencies.
+1.git pull form git hub
 
 ```bash
-npm
+ git pull <repo>
 ```
 
-## start
+some users enabled need password please check your git account
+
+2. npm install
+
+```bash
+npm i
+```
+
+3. start
+
 ```bash
 npm run start
 ```
-please use mentioned port in the server.js file
 
-# questions
-1. Please join the products table with the user's table (user_id is the primary key in the user's table and the user_id field is a foreign key in the projects table) and use that to join the code.
-```sql
-SELECT * FROM `ilance_projects` JOIN ilance_users ON ilance_users.user_id=ilance_projects.user_id;
+# make sure
 
-```
-2. Do pagination - 2 rows in each page.Please do pagination in jquery code.Output should be in jquery not in refresh page
-```sql
-SELECT * FROM `ilance_projects` JOIN ilance_users ON ilance_users.user_id=ilance_projects.user_id LEFT JOIN ilance_categories ON ilance_categories.cid=ilance_projects.cid;
-```
- 
+1. Is backend code running in your computer
+2. check port is correct
+3. (ex) front end 3000 and back end 4001
 
-## FOR USASGE
- just pull using git in command line
-```bash
-git pull <>repository<>
-```
+# modules used
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+1. express.js
+2. mysql npm
+3. faster-validator for parameter validation
+4. crypto js for token initialization
+5. md5 npm for user login password verification
+
+
